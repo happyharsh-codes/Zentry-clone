@@ -1,0 +1,54 @@
+.bentocard{
+    border: 1px solid rgb(43, 43, 43);
+    border-radius: 7px;
+    background-color: black;
+    position: relative;
+
+    overflow: hidden;
+}
+
+.bentocard:hover{
+
+}
+
+.bentocard video{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.bentocard .content{
+    margin: 0.6rem;
+    max-width: 30%;
+
+    z-index: 10;
+}
+
+.bentocard .content h1{
+    font-size: 2rem;
+    line-height: 1;
+    color: white;
+    text-align: start;
+}
+
+.bentocard .content p{
+    font-size: 0.6rem;
+    color: rgb(192, 192, 192);
+    text-align: start;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 786px) {
+    .bentocard .content p{
+        font-size: 0.7rem;
+    }
+    .bentocard .content h1{
+        font-size: 1.8rem;
+    }
+}

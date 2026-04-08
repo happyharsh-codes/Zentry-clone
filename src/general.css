@@ -2,10 +2,21 @@ section {
 	width: 100%;
 	height: 100dvh;
   
-  scroll-snap-type: mandatory;
+  scroll-snap-type: proximity;
   overflow: hidden;
 }
 
+.section-about{
+  height: 150vh;
+}
+
+.section-features{
+  height: 150vh;
+}
+
+.section-story{
+  height: 132vh;
+}
 h1, h2, p{
   font-family: inherit;
   
@@ -67,7 +78,7 @@ p{
 @layer base{
   @font-face {
     font-family: "circular-web";
-    src: url("fonts/circular-web.woff2") format("woff2");
+    src: url("fonts/circularweb-book.woff2") format("woff2");
   }
   
   @font-face {

@@ -1,6 +1,60 @@
 .features{
     width: 100%;
     height: 100%;
+    padding: 3rem 6rem;
+    background-color: black;
+}
+.heading p{
+    font-size: 0.7rem;
+    color: grey;
+    line-height: 1.3;
+}
+
+.heading-title{
+    color: white;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "b d"
+    "e f";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.8fr 2.2fr 2.2fr 2.2fr;
     
-    background-color: brown;
+    gap: 1rem;
+}
+
+.card-a { grid-area: a;}
+.card-b { grid-area: b;}
+.card-c { grid-area: c;}
+.card-d { grid-area: d;}
+.card-e { grid-area: e;}
+.card-f { grid-area: f;}
+
+
+@media screen and (max-width: 786px) {
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 1.8fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "a a a"
+        ". b b"
+        "c c ."
+        ". d d"
+        "e e ."
+        ". f f";
+    }
+    .features{
+        padding: 3rem;
+    }
+    .section-features{
+        height: 200vh;
+    }
 }

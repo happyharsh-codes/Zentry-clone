@@ -15,17 +15,17 @@ function Home() {
 	return (
 		<>
 			<main>
-				<Navbar />
+				<Navbar/>
 				<section>
 					<Dashboard />
 				</section>
-				<section>
+				<section className="section-about">
 					<About />
 				</section>
-				<section>
+				<section className="section-features">
 					<Features />
 				</section>
-				<section>
+				<section className="section-story">
 					<Story />
 				</section>
 				<section>

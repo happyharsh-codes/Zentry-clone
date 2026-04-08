@@ -2,6 +2,7 @@ import { useState, useRef , useEffect, act} from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 
+import Button from '../subcomponents/Buttons';
 import '../general.css'
 import '../styles/dashboard.css'
 
@@ -104,10 +105,11 @@ function Dashboard() {
                 <div className="contents transparent font-zentry floatbox">
                     <div className="top-left content-top-left">
                         <div><h1>REDEFI<b>N</b>E</h1></div>
-                        <p className='font-robert-regular'>Enter the Human-Agentic OS <br/>The substrate where life, data and AI<br/>form a perpetual engine, compounding intelligence,<br/> capability, and value.</p>
+                        <p className='font-robert-regular'>Enter the Metagame Layer<br/>Unleash the play economy</p>
+                        <Button label = "Watch Trailer"/>
                     </div>
                     <div className="bottom-right content-bottom-right">
-                        <h1>Re<b>a</b>lity</h1>
+                        <h1>G<b>a</b>Ming</h1>
                     </div>
                 </div>
             </div>

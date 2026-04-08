@@ -2,5 +2,51 @@
     width: 100%;
     height: 100%;
     
-    background-color: chartreuse;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.story-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.story-heading p{
+    margin-top: 5rem;
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.story-heading h1{
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.story-image{
+    width: 80vw;
+    height: 20rem;
+    border-radius: 10px;
+
+}
+.story-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+
+    object-position: center;
+    object-fit: cover;
+}
+
+.story-content{
+    margin-top: 2rem;
+    max-width: 70vw;
+}
+
+.story-content p {
+    font-size: 0.7rem;
+    font-weight: 200;
 }
