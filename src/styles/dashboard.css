@@ -1,0 +1,104 @@
+.dashboard{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.videoplayer{
+    width: 100%;
+    height: 100%;
+
+}
+
+#mainVideoPlayer{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    
+    
+    z-index: 1;
+}
+
+.contents{
+    height: 100%;
+    width: 100%;
+    
+    top:0;
+    left: 0;
+    
+    background: transparent;
+    
+    z-index: 3;
+}
+.contents h1{
+    width: auto;
+    height: auto;
+    
+    font-size: 6rem;
+    line-height: 1;
+}
+.contents p{
+    font-size: 0.8rem;
+    line-height: 1.8cap;
+}
+.content-top-left{
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem;
+    padding-bottom: 2rem;
+    text-align: start;
+}
+
+.content-bottom-right{
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+#miniVideoPlayer{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    object-fit: cover;
+    object-position: center;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    transition: all 0.5s ease-in-out;
+    z-index: 4;
+}
+
+
+#miniVideoPlayer:hover{
+    animation: vibrate 2s infinite ease-in-out;
+}
+
+@keyframes vibrate {
+    0%, 100%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.2
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contents h1{
+        font-size: 4rem;
+    }
+    .contents p {
+        font-size: 1rem;
+    }
+}
