@@ -1,0 +1,18 @@
+button{
+    background-color: yellow;
+    color: black;
+    border-radius: 100px;
+    border: none;
+    padding: 3% 7%;
+
+    font-family: "General";
+    font-size: 0.6rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.button-animate{
+
+}

@@ -18,7 +18,6 @@ function Dashboard() {
     const [active, setActive] = useState(mainVideoRef);
 
     const getUpcomingVideoSource = (index) => `videos/hero-${(index%4)+1}.mp4`
-    const timeline = gsap.timeline();
 
     useEffect(() => {
         if (!hasClicked) return
@@ -37,11 +36,11 @@ function Dashboard() {
         }).fromTo(e.target, {
             width: 0,
             height: 0,
-            borderRadius: "15px",
+            borderRadius: "7px",
             zIndex: 4
             },{
-            height: "5rem",
-            width: "5rem",
+            height: "9rem",
+            width: "9rem",
             border: "1px solid black",
             ease: "power2.inOut",
             duration: 1,

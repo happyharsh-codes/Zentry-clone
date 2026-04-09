@@ -1,11 +1,11 @@
-header{
+.nav-header{
     background-color: black;
     color: white;
 
     position: fixed;
     top: 0.5rem;
-    left: 1.4rem;
-    right: 1.4rem;
+    left: 1.2rem;
+    right: 1.2rem;
     height: 8vh;
     border-radius: 7px;
 
@@ -14,6 +14,7 @@ header{
     justify-content: space-around;
     align-items: center;
 
+    transition: translate 0.3 ease-in-out;
     z-index: 100;
 }
 
@@ -21,26 +22,57 @@ header section{
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+
 }
 
 .nav-left-section {
     width: 25%;
+    gap: 1vw;
+    justify-content: space-around;
 }
 
 .logo{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 5px;
+    cursor: grab;
 }
 
 .nav-middle-section {
 
 }
 
-.nav-right-section {
+.nav-right-section{
+    position: relative;
+    justify-content: end;
+    gap: 1vw;
+}
+.nav-right-section .nav-element{
+    font-family: "General";
+    font-size: 0.6rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.6rem;
+}
 
+.nav-right-section .nav-element:hover{
+    color: black;
+}
+
+.nav-glow{
+    position: absolute;
+    background-color: white;
+    border-radius: 99px;
+
+    top: 0;
+    left: 0;
+    padding: 0.6rem;
+
+    opacity: 0;
+    scale: 0.85;
+    transition: all 1s ease;
+    z-index: -1;
 }
 
 
@@ -52,4 +84,8 @@ header section{
         right: 0;
     }
     .nav-middle-section{display: none;}
+}
+
+@media screen and (max-width: 768px) {
+    
 }

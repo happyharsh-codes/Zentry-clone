@@ -6,11 +6,7 @@ import Contact from "./components/Contact";
 import Story from "./components/Story";
 import Footer from "./components/Footer";
 
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger.js";
-
 function Home() {
-	gsap.registerPlugin([ScrollTrigger]);
 	
 	return (
 		<>
